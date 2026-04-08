@@ -79,8 +79,8 @@ main {
     text-align: center;
     iframe{
         text-align: center;
-        width: 1000px;
-        height: 562px;
+        width: 1280px;
+        height: 720px;
         border: none;
     }
 }
@@ -129,7 +129,7 @@ main {
         }
     }/*Fim do Banner*/
     main{
-        width: 1200px;
+        width: 1280px;
         margin-top: 130px;
         .instrucoes{
             div{
