@@ -28,14 +28,10 @@ header{
                 border-radius: 5px;
             }
     }
-    img{
-        position: absolute;
-        top: 0px;           
-        left: 20px;          
-        height: 120px;       
-        z-index: 100;        
-        width: auto;
-    }
+}
+
+.logo {
+    display: none;
 }
 
 .banner{
@@ -53,6 +49,14 @@ main {
     margin: auto;
     background-color: #242234;
     color: #ffffff;
+    h2{
+        text-align: center;
+        margin: 15px;
+        padding: 10px;
+    }
+    p{
+        font-size: 22px;
+    }
     #instrucoes {
         text-align: center;
         margin-top: 50px;
@@ -70,8 +74,39 @@ main {
             font-size: 18px;
         }
     }
+    .recursos {
+        margin-bottom: 40px;
+    }
+    .recursos-img {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+        img{
+            border: 1px solid #ffffff;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .recursos-info {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .recursos-info p, .recursos-info a {
+        margin: 5px;
+    }
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #999393;
+    margin-top: 50px;
+}
 /* Regras para telas maiores que 480px*/
 
 @media(min-width: 480px) {
@@ -80,8 +115,17 @@ main {
         display: inline-block;
         z-index: 10;
         .logo{
+            display: block;
             float: left;
             z-index: 11;
+             img{
+                position: absolute;
+                top: 0px;           
+                left: 20px;          
+                height: 120px;       
+                z-index: 100;        
+                width: auto;
+            }      
         }
         nav{
             float: right;
@@ -123,31 +167,48 @@ main {
             width: 100%;
             height: auto;
             text-align: center;
+        }
         iframe{
             text-align: center;
             width: 1280px;
             height: 720px;
             border: none;
         }
-    }
-        .instrucoes{
-            div{
-                width: 100%;
-                h2{
-                    text-align: center;
-                    margin: 15px;
-                    padding: 10px;
-                }
-            }
-        }
         .historia{
-            div{
-                margin-top: 150px;
-                h1{
-                    text-align: center;
-                    margin-bottom: 20px;
+            img{
+                text-align: center;
+                margin: 20px;
+            }
+            .grid{
+                .coluna-texto{
+                    margin-top: 20px;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 48%;
+                    p{
+                        font-size: 22px;
+                    }
+                }
+                .coluna-imagemtexto{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 48%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .coluna-imagem{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 48%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }
     }
-} /*Fim do media*/
+} 
+/*Fim do media*/
