@@ -170,9 +170,10 @@ footer {
         }
         iframe{
             text-align: center;
-            width: 1280px;
-            height: 720px;
+            width: 1000px;
+            height: 552px;
             border: none;
+            margin-bottom: 100px;
         }
         .historia{
             img{

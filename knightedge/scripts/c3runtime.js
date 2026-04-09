@@ -1496,6 +1496,7 @@ self.C3_ExpressionFuncs = [
 		() => 250,
 		() => 1200,
 		() => "idle",
+		() => "musicabg",
 		() => 100,
 		() => "fadein",
 		() => 2,
@@ -1504,7 +1505,6 @@ self.C3_ExpressionFuncs = [
 			return () => f0();
 		},
 		() => -10,
-		() => "bgmusic",
 		() => "atack",
 		() => "death",
 		() => "run",
