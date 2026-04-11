@@ -17,7 +17,11 @@
         <a href="index.html" title="Home" class="logo">
             <img src="imgs/gamelogo.png" alt="KnightEdge Banner" title="KnightEdge Banner">
         </a>
-        <nav>
+
+        <a href="javascript:menu()" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -29,34 +33,64 @@
                     <a href="creditos.html">Creditos</a>
                 </li>
                 <li class="btnjogar">
-                    <a href="jogar.html">Jogar</a>
+                    <a href="knightedge/index.html" target="_blank">Jogar</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="historia">
+        <section class="sobre">
             <h2>História</h2>
             <div class="grid">
-                <div class="coluna-texto">
-                    <p>Um culto misterioso corrompeu a corte, levando o rei a trair seus próprios cavaleiros e trancafiá-los sob o castelo. Após anos de cárcere, um terremoto inesperado abre as portas da sua cela. Ao sair, você descobre que as masmorras não são mais as mesmas: estão infestadas de criaturas monstruosas. Empunhe sua arma, derrote as criaturas e encontre a saída.</p>
-                </div>
-                <div class="coluna-imagemtexto">
+                <div class="coluna-imagem">
                     <img src="imgs/cultistandking.png" alt="cultista e rei" title="cultista e rei">
+                </div>
+                <div class="coluna-texto">
+                    <p>Um culto misterioso corrompeu a corte, levando o rei a trair seus cavaleiros mais próximos.</p>
                 </div>
             </div>
             <div class="grid">
                 <div class="coluna-imagem">
-                    <img src="imgs/presos.png" alt="cavaleiros presos" title="cavaleiros presos">
+                    <img src="imgs/presos.png" alt="cavaleiros sendo presos" title="cavaleiros sendo presos">
                 </div>
+                <div class="coluna-texto">
+                    <p>Eles foram trancafiá-los em uma masmorra infame abaixo do castelo.</p>
+                </div>
+            </div>
+            <div class="grid">
                 <div class="coluna-imagem">
                     <img src="imgs/cela.png" alt="cela do protagonista" title="cela do protagonista">
                 </div>
+                <div class="coluna-texto">
+                    <p>Após anos de cárcere, um terremoto inesperado abre as portas da sua cela. Ao sair, você descobre que as masmorras não são mais as mesmas: estão infestadas de criaturas monstruosas. Empunhe sua arma, derrote as criaturas e encontre a saída.</p>
+                </div>
             </div>
+        </section>
+        <section class="sobre">
+            <h2>Especificações Técnicas</h2>
+            <div class="grid">
+                <div class="coluna-imagem">
+                    <img src="imgs/banner.png" alt="Jogocapa" title="Jogocapa">
+                </div>
+                 <div class="coluna-texto">
+                    <p>Nome do Jogo: KnightEdge</p>
+                    <p>Engine: Construct3</p>
+                    <p>Data de lançamento: 12/04/2026</p>
+                    <p>Gênero: Ação, Aventura, Plataforma</p>
+                    <p>Plataformas: PC</p>
+                    <p>Desenvolvedor: Brandon Yudi Sato</p>
+                </div>
+            </div> 
         </section>
    </main>
     <footer>
         <p>Desenvolvido por: Brandon Yudi Sato - 2026</p>
     </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function menu() {
+            $("#menu").toggle();
+        }
+    </script>
 </body>
 </html>

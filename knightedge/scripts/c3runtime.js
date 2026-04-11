@@ -1496,13 +1496,17 @@ self.C3_ExpressionFuncs = [
 		() => 250,
 		() => 1200,
 		() => "idle",
-		() => "musicabg",
+		() => "bgmusic",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0();
+		},
 		() => 100,
 		() => "fadein",
 		() => 2,
 		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0();
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
 		},
 		() => -10,
 		() => "atack",
@@ -1533,11 +1537,7 @@ self.C3_ExpressionFuncs = [
 		() => "2heath",
 		() => "1health",
 		() => "gameover",
-		() => 1.1,
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		}
+		() => 1.1
 ];
 
 

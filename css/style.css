@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: "germania one", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #242234;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header{
@@ -16,7 +19,21 @@ header{
     border-bottom: 1px solid #383838;
     text-align: center;
     padding: 5px;
+
+
+    .header-menu {
+        float: right;
+        margin: 10px;
+        color: #CCC;
+        border: 1px solid #CCC;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 5px;
+    }
     nav{
+        display: none;
+        text-align: center;
+        margin-top: 60px;
         a{
             text-decoration: none;
             color: #999393;
@@ -24,14 +41,23 @@ header{
         }
             .btnjogar a{
                 background-color: rgb(190, 12, 12);
-                padding: 10px 20px;
+                padding: 0px 2px;
                 border-radius: 5px;
             }
     }
 }
 
 .logo {
-    display: none;
+    display: block;
+    float: left;
+     img{
+        position: absolute;
+        top: 0px;           
+        left: 20px;
+        height: 75px;
+        z-index: 100;
+        width: auto;
+    }
 }
 
 .banner{
@@ -40,46 +66,50 @@ header{
         height: auto;
     }
     .botao-jogar{
-        display: none;
+        height: 100px;
     }
 }
 
 main {
-    width: 400px;
-    margin: auto;
+    width: 100%;
+    margin-top: 80px;
+    max-width: 400px;
+    min-height: 800px;
     background-color: #242234;
     color: #ffffff;
     h2{
         text-align: center;
+        font-size: 32px;
         margin: 15px;
         padding: 10px;
     }
     p{
         font-size: 22px;
     }
-    #instrucoes {
-        text-align: center;
-        margin-top: 50px;
-        div{
-            border: #ffffff solid 1px;
+    .sobre{
+         .grid{
+            .coluna-texto{
+                padding: 20px;
+                margin-bottom: 10px;
+                p{
+                    margin-left: 20px;
+                    font-size: 22px;
+                }
+            }
+            .coluna-imagem{
+                text-align: center;
+                margin-bottom: 20px;
+                border: 1px solid #ffffff;
+                img{
+                    width: 100%;
+                    height: 400px;
+                }
+            }
         }
-        h2{
-            text-align: center;
-            margin: 15px;
-            padding: 10px;
-        }
-        p{
-            padding: 30px;
-            text-align: center;
-            font-size: 18px;
-        }
-    }
-    .recursos {
-        margin-bottom: 40px;
     }
     .recursos-img {
         display: inline-block;
-        margin-right: 20px;
+        margin: 25px;
         vertical-align: top;
         img{
             border: 1px solid #ffffff;
@@ -91,21 +121,25 @@ main {
     .recursos-info {
         display: inline-block;
         vertical-align: top;
+        margin: 15px;
     }
     .recursos-info p, .recursos-info a {
+        margin: 5px;;
+    }
+    .recursos-info a{
         margin: 5px;
+        font-size: 22px;
+        color: #ffffff;
     }
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+
     width: 100%;
     text-align: center;
     padding: 20px;
     background-color: #000000;
     color: #999393;
-    margin-top: 50px;
 }
 /* Regras para telas maiores que 480px*/
 
@@ -127,8 +161,21 @@ footer {
                 width: auto;
             }      
         }
+        .header-menu{
+            display: none;
+            
+        }
+        
         nav{
+            display: block;
+            margin-top: 15px;
+            margin-right: 40px;
             float: right;
+            .btnjogar {
+                padding: 20px 30px;
+                background-color: rgb(190, 12, 12);
+                border-radius: 5px;
+            }
             ul{
                 list-style: none;
                 li{
@@ -145,10 +192,10 @@ footer {
             }
         }
     }/*Fim do Header*/
-    .banner
-    {
+    .banner{
         position: relative;
         margin-top: 20px;
+        width: auto;
         .botao-jogar{
             display: block;
             position: absolute;
@@ -160,8 +207,10 @@ footer {
         }
     }/*Fim do Banner*/
     main{
-        width: 1280px;
-        margin-top: 130px;
+        max-width: none;
+        height: auto;
+        width: auto;
+        margin-top: 90px;
         #jogo{
             margin-top: 150px;
             width: 100%;
@@ -175,41 +224,21 @@ footer {
             border: none;
             margin-bottom: 100px;
         }
-        .historia{
-            img{
-                text-align: center;
-                margin: 20px;
-            }
+        .sobre{
             .grid{
                 .coluna-texto{
-                    margin-top: 20px;
                     display: inline-block;
                     vertical-align: top;
-                    width: 48%;
-                    p{
-                        font-size: 22px;
-                    }
-                }
-                .coluna-imagemtexto{
-                    display: inline-block;
-                    vertical-align: top;
-                    width: 48%;
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
+                    width: 42%;
                 }
                 .coluna-imagem{
                     display: inline-block;
                     vertical-align: top;
-                    width: 48%;
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
+                    width: 30%;
                 }
             }
         }
     }
-} 
+}
+
 /*Fim do media*/

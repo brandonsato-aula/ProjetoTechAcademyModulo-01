@@ -17,7 +17,11 @@
         <a href="index.html" title="Home" class="logo">
             <img src="imgs/gamelogo.png" alt="KnightEdge Banner" title="KnightEdge Banner">
         </a>
-        <nav>
+
+        <a href="javascript:menu()" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -29,20 +33,25 @@
                     <a href="creditos.html">Creditos</a>
                 </li>
                 <li class="btnjogar">
-                    <a href="jogar.html">Jogar</a>
+                    <a href="knightedge/index.html" target="_blank">Jogar</a>
                 </li>
             </ul>
         </nav>
     </header>
-
+<main>
     <div class="banner">
         <img src="imgs/banner.png" class="banner-img" alt="KnightEdge Banner" title="KnightEdge Banner">
-        <a href="jogar.html">
+        <a href="knightedge/index.html" target="_blank">
             <img src="imgs/jogaragorabtn.png" class="botao-jogar" alt="Botão Jogar" title="Botão Jogar">
         </a>
     </div>
-    <main>
-    </main>
+</main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function menu() {
+            $("#menu").toggle();
+        }
+    </script>
     <footer>
         <p>Desenvolvido por: Brandon Yudi Sato - 2026</p>
     </footer>
