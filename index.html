@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KnightEdge</title>
-    <link rel="icon" href="imgs/icone.png">
+    <link rel="icon" href="imgs/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
@@ -18,6 +18,9 @@
             <img src="imgs/gamelogo.png" alt="KnightEdge Banner" title="KnightEdge Banner">
         </a>
 
+        <a href="javascript:toggleTheme()" class="theme-toggle" title="Alternar tema">
+            <i id="theme-toggle-icon" class="fas fa-sun"></i>
+        </a>
         <a href="javascript:menu()" class="header-menu">
             <i class="fas fa-bars"></i>
         </a>
@@ -30,6 +33,9 @@
                     <a href="sobre.html">Sobre</a>
                 </li>
                 <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li>
                     <a href="creditos.html">Creditos</a>
                 </li>
                 <li class="btnjogar">
@@ -40,20 +46,24 @@
     </header>
 <main>
     <div class="banner">
+        <img src="imgs/banner sem logo.png" class="banner-alt" alt="KnightEdge Banner celular" title="KnightEdge Banner celular">
         <img src="imgs/banner.png" class="banner-img" alt="KnightEdge Banner" title="KnightEdge Banner">
         <a href="knightedge/index.html" target="_blank">
             <img src="imgs/jogaragorabtn.png" class="botao-jogar" alt="Botão Jogar" title="Botão Jogar">
+            <img src="imgs/jogaragorabtn2.png" class="botao-jogar-hover" alt="Botão Jogar Hover" title="Botão Jogar Hover">
         </a>
     </div>
 </main>
+    <footer>
+        <p>Desenvolvido por: Brandon Yudi Sato - 2026</p>
+    </footer>
+    <script src="js/check.js"></script>
+    <script src="js/techforge.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
         function menu() {
             $("#menu").toggle();
         }
     </script>
-    <footer>
-        <p>Desenvolvido por: Brandon Yudi Sato - 2026</p>
-    </footer>
 </body>
 </html>

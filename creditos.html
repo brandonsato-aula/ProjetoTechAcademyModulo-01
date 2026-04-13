@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KnightEdge</title>
-    <link rel="icon" href="imgs/icone.png">
+    <link rel="icon" href="imgs/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
@@ -18,6 +18,9 @@
             <img src="imgs/gamelogo.png" alt="KnightEdge Banner" title="KnightEdge Banner">
         </a>
 
+        <a href="javascript:toggleTheme()" class="theme-toggle" title="Alternar tema">
+            <i id="theme-toggle-icon" class="fas fa-sun"></i>
+        </a>
         <a href="javascript:menu()" class="header-menu">
             <i class="fas fa-bars"></i>
         </a>
@@ -28,6 +31,9 @@
                 </li>
                 <li>
                     <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
                 </li>
                 <li>
                     <a href="creditos.html">Creditos</a>
@@ -105,7 +111,6 @@
             <div class="recursos">
                 <div class="recursos-img">
                     <img src="imgs/voyagesong.webp" alt="voyage" title="voyage">
-
                 </div>
                 <div class="recursos-info">
                     <p>Nome: Voyage (16-Bit Arcade No Copyright Music)</p>
@@ -113,15 +118,56 @@
                     <a href="https://pandabeatsmusic.com/listen-now/" target="_blank">Link: https://pandabeatsmusic.com/listen-now/</a>
                 </div>
             </div>
-            <div class="recursos">
-                <div class="recursos-img conteudo18">
+            <div class="recursos" id="conteudo18">
+                <div class="recursos-img">
                     <img src="imgs/fuckingmoths.png" alt="fucking moths" title="fucking moths">
 
                 </div>
-                <div class="recursos-info conteudo18">
+                <div class="recursos-info">
                     <p>Nome: Fucking Moths</p>
                     <p>Autor: RoccoW</p>
                     <a href="https://soundcloud.com/roccow/fucking-moths" target="_blank">Link: https://soundcloud.com/roccow/fucking-moths</a>
+                </div>
+            </div>
+            <div class="recursos">
+                <div class="recursos-img">
+                    <img src="imgs/itsnotover.png" alt="its not over" title="its not over">
+
+                </div>
+                <div class="recursos-info">
+                    <p>Nome: 16 Bit Music - "Its Not Game Over Yet"</p>
+                    <p>Autor: Cody O’Quinn</p>
+                    <a href="https://codyoquinnmusic.com/single/43376/it-s-not-game-over-yet" target="_blank">Link: https://codyoquinnmusic.com/single/43376/it-s-not-game-over-yet</a>
+                </div>
+            </div>
+            <div class="recursos">
+                <div class="recursos-img">
+                    <img src="imgs/pixelfont.GIF" alt="pixel font" title="pixel font">
+                </div>
+                <div class="recursos-info">
+                    <p>Nome: The collection of 8-bit fonts for Grafx2 (r2)</p>
+                    <p>Autor: devurandom</p>
+                    <a href="https://opengameart.org/content/the-collection-of-8-bit-fonts-for-grafx2" target="_blank">Link: https://opengameart.org/content/the-collection-of-8-bit-fonts-for-grafx2</a>
+                </div>
+            </div>
+            <div class="recursos">
+                <div class="recursos-img">
+                    <img src="imgs/pixeleffect.png" alt="pixel effect" title="pixel effect">
+                </div>
+                <div class="recursos-info">
+                    <p>Nome: Super Pixel Effects Gigapack</p>
+                    <p>Autor: unTied Games</p>
+                    <a href="https://untiedgames.itch.io/super-pixel-effects-gigapack" target="_blank">Link: https://untiedgames.itch.io/super-pixel-effects-gigapack</a>
+                </div>
+            </div>
+            <div class="recursos">
+                <div class="recursos-img">
+                    <img src="imgs/onlychance.png" alt="only chance" title="only chance">
+                </div>
+                <div class="recursos-info">
+                    <p>Nome: 8 Bit/16 Bit Music - "This Is Our Only Chance!"</p>
+                    <p>Autor: Cody O’Quinn</p>
+                    <a href="https://codyoquinnmusic.com/single/41049/this-is-our-only-chance" target="_blank">Link: https://codyoquinnmusic.com/single/41049/this-is-our-only-chance</a>
                 </div>
             </div>
             </div>
@@ -130,6 +176,7 @@
     <footer>
         <p>Desenvolvido por: Brandon Yudi Sato - 2026</p>
     </footer>
+    <script src="js/techforge.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
         function menu() {

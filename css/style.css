@@ -11,6 +11,11 @@ body {
     width: 100%;
 }
 
+
+
+
+
+
 header{
     position: fixed;
     width: 100%;
@@ -20,6 +25,18 @@ header{
     text-align: center;
     padding: 5px;
 
+    /*Inicio botao de tema*/
+    .theme-toggle {
+        float: right;
+        margin: 10px 5px;
+        color: #CCC;
+        border: 1px solid #CCC;
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+    }
+    /*final botao de tema*/
 
     .header-menu {
         float: right;
@@ -61,6 +78,9 @@ header{
 }
 
 .banner{
+    .banner-img{
+        display: none;
+    }
     img{
         width: 100%;
         height: auto;
@@ -68,11 +88,14 @@ header{
     .botao-jogar{
         height: 100px;
     }
+    .botao-jogar-hover{
+        display: none;
+    }
 }
 
 main {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
     max-width: 400px;
     min-height: 800px;
     background-color: #242234;
@@ -123,14 +146,59 @@ main {
         vertical-align: top;
         margin: 15px;
     }
+
     .recursos-info p, .recursos-info a {
         margin: 5px;;
     }
+
     .recursos-info a{
-        margin: 5px;
         font-size: 22px;
         color: #ffffff;
     }
+
+    .recursos-info a:hover{
+        color: #999393;
+    }
+
+    .card-contato{
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+            height: auto;
+        }
+        text-align: center;
+        p{
+            margin: 20px;
+        }
+        a{
+
+            color: #ffffff;
+        }
+        .social-media{
+            a{
+                border-radius: 5px;
+                font-size: 32px;
+                margin: 20px;
+                padding: 5px;
+                text-decoration: none;
+                border: solid 1px #ffffff;
+            }
+            a:hover{
+               color: #999393; 
+               border: solid 1px #999393;
+            }
+            
+
+        }
+    }
+
+
+
+
+
+
+
 }
 
 footer {
@@ -141,6 +209,89 @@ footer {
     background-color: #000000;
     color: #999393;
 }
+
+
+
+/*thema claro inicio*/
+body.light-theme {
+    background-color: #f7f7f7;
+    color: #111111;
+}
+
+body.light-theme header {
+    background-color: #ffffff;
+    border-bottom-color: #cccccc;
+}
+
+body.light-theme .btnjogar a:hover{
+    color: #858585;
+}
+
+body.light-theme main {
+    background-color: #f7f7f7;
+    color: #111111;
+}
+
+body.light-theme footer {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+body.light-theme a {
+    color: #111111;
+}
+
+body.light-theme a:hover {
+    color: #858585;
+}
+
+
+body.light-theme .btnjogar a {
+    color: #ffffff;
+}
+
+body.light-theme .sobre .coluna-imagem img {
+    border: 1px solid #111111;
+}
+
+
+body.light-theme .recursos-info a {
+    color: #111111;
+}
+
+body.light-theme .recursos-info a:hover {
+    color: #858585;
+}
+
+body.light-theme .social-media a {
+    color: #111111;
+    border-color: #111111;
+}
+
+.theme-toggle {
+    float: right;
+    margin: 10px 5px;
+    color: #CCC;
+    border: 1px solid #CCC;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.theme-toggle:hover {
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+
+
+
+/*thema claro final*/
+
+
+
 /* Regras para telas maiores que 480px*/
 
 @media(min-width: 480px) {
@@ -148,6 +299,9 @@ footer {
         width: 100%;
         display: inline-block;
         z-index: 10;
+        .theme-toggle {
+            font-size: 20px;
+        }
         .logo{
             display: block;
             float: left;
@@ -191,11 +345,18 @@ footer {
                 }
             }
         }
-    }/*Fim do Header*/
+    }
     .banner{
         position: relative;
         margin-top: 20px;
         width: auto;
+        .banner-alt{
+            display: none;
+        }
+        .banner-img{
+            display: block;
+        }
+
         .botao-jogar{
             display: block;
             position: absolute;
@@ -205,25 +366,29 @@ footer {
             left: 50%;
             transform: translate(-50%, -50%);
         }
-    }/*Fim do Banner*/
+        .botao-jogar-hover{
+            display: none;
+            position: absolute;
+            height: 140px;
+            width: auto;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        a:hover {
+            .botao-jogar {
+                display: none;
+            }
+            .botao-jogar-hover {
+                display: block;
+            }
+        }
+    }
     main{
         max-width: none;
         height: auto;
         width: auto;
         margin-top: 90px;
-        #jogo{
-            margin-top: 150px;
-            width: 100%;
-            height: auto;
-            text-align: center;
-        }
-        iframe{
-            text-align: center;
-            width: 1000px;
-            height: 552px;
-            border: none;
-            margin-bottom: 100px;
-        }
         .sobre{
             .grid{
                 .coluna-texto{
@@ -232,6 +397,7 @@ footer {
                     width: 42%;
                 }
                 .coluna-imagem{
+                    margin-left: 50px;
                     display: inline-block;
                     vertical-align: top;
                     width: 30%;
@@ -240,5 +406,4 @@ footer {
         }
     }
 }
-
 /*Fim do media*/

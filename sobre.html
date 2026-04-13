@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KnightEdge</title>
-    <link rel="icon" href="imgs/icone.png">
+    <link rel="icon" href="imgs/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
@@ -18,6 +18,9 @@
             <img src="imgs/gamelogo.png" alt="KnightEdge Banner" title="KnightEdge Banner">
         </a>
 
+        <a href="javascript:toggleTheme()" class="theme-toggle" title="Alternar tema">
+            <i id="theme-toggle-icon" class="fas fa-sun"></i>
+        </a>
         <a href="javascript:menu()" class="header-menu">
             <i class="fas fa-bars"></i>
         </a>
@@ -28,6 +31,9 @@
                 </li>
                 <li>
                     <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
                 </li>
                 <li>
                     <a href="creditos.html">Creditos</a>
@@ -73,12 +79,12 @@
                     <img src="imgs/banner.png" alt="Jogocapa" title="Jogocapa">
                 </div>
                  <div class="coluna-texto">
-                    <p>Nome do Jogo: KnightEdge</p>
-                    <p>Engine: Construct3</p>
-                    <p>Data de lançamento: 12/04/2026</p>
-                    <p>Gênero: Ação, Aventura, Plataforma</p>
-                    <p>Plataformas: PC</p>
-                    <p>Desenvolvedor: Brandon Yudi Sato</p>
+                    <p>Nome do Jogo: <span id="titulo-jogo"></span></p>
+                    <p>Engine: <span id="info-engine"></span></p>
+                    <p>Data de lançamento: <span id="info-data"></span></p>
+                    <p>Gênero: <span id="info-gen"></span></p>
+                    <p>Plataformas: <span id="info-plat"></span></p>
+                    <p>Desenvolvedor: <span id="info-dev"></span></p>
                 </div>
             </div> 
         </section>
@@ -86,6 +92,8 @@
     <footer>
         <p>Desenvolvido por: Brandon Yudi Sato - 2026</p>
     </footer>
+    <script src="js/variaveis.js"></script>
+    <script src="js/techforge.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
         function menu() {
