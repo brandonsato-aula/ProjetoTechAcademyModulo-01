@@ -55,21 +55,26 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.ToggleBoolInstanceVar,
-		C3.Plugins.System.Acts.GoToLayout,
+		C3.JavaScriptInEvents.Folhagameplay_Event18_Act15,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Cnds.CompareX,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
+		C3.JavaScriptInEvents.Folhagameplay_Event29_Act7,
 		C3.Behaviors.LOS.Cnds.HasLOSToObject,
 		C3.Behaviors.MoveTo.Acts.MoveToObject,
 		C3.Behaviors.MoveTo.Acts.SetEnabled,
 		C3.Plugins.Sprite.Cnds.OnAnimFinished,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
-		C3.Plugins.System.Acts.NextPrevLayout,
+		C3.JavaScriptInEvents.Folhagameplay_Event41_Act11,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.System.Acts.GoToLayoutByName
+		C3.JavaScriptInEvents.Folhagameover_Event2_Act6,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.JavaScriptInEvents.Folhagameover_Event3_Act7,
+		C3.JavaScriptInEvents.Folhamenuprincipal_Event1_Act5,
+		C3.JavaScriptInEvents.Folhatutorial_Event1_Act5
 	];
 };
 self.C3_JsPropNameTable = [
