@@ -161,13 +161,13 @@ main {
     }
 
     .card-contato{
+        text-align: center;
         img{
             display: block;
             margin: 0 auto;
-            width: 500px;
+            width: 380px;
             height: auto;
         }
-        text-align: center;
         p{
             margin: 20px;
         }
@@ -402,6 +402,12 @@ body.light-theme .social-media a {
                     vertical-align: top;
                     width: 30%;
                 }
+            }
+        }
+        .card-contato{
+            img{
+                width: 500px;
+                height: auto;
             }
         }
     }
