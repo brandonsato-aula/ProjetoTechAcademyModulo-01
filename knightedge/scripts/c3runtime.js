@@ -1517,6 +1517,8 @@ self.C3_ExpressionFuncs = [
 		() => 0.3,
 		() => 20,
 		() => 0.2,
+		() => "1health",
+		() => "2heath",
 		() => "0health",
 		() => 0.06,
 		() => 3,
@@ -1534,8 +1536,6 @@ self.C3_ExpressionFuncs = [
 		() => "shoot",
 		() => "full",
 		() => 0.5,
-		() => "2heath",
-		() => "1health",
 		() => "gameover",
 		() => 1.1
 ];

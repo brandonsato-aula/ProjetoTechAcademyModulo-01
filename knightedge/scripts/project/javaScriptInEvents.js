@@ -25,17 +25,17 @@ const scriptsInEvents = {
 		runtime.goToLayout("titlescreen")
 	},
 
-	async Folhagameplay_Event18_Act15(runtime, localVars)
+	async Folhagameplay_Event20_Act15(runtime, localVars)
 	{
 		runtime.goToLayout("gameoverscreen")
 	},
 
-	async Folhagameplay_Event29_Act7(runtime, localVars)
+	async Folhagameplay_Event32_Act7(runtime, localVars)
 	{
 		runtime.goToLayout("gameoverscreen");
 	},
 
-	async Folhagameplay_Event41_Act12(runtime, localVars)
+	async Folhagameplay_Event44_Act12(runtime, localVars)
 	{
 		const proxlayout = runtime.layout.index + 1;
 		runtime.goToLayout(proxlayout);
