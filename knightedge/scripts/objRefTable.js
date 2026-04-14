@@ -68,11 +68,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnAnimFinished,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
-		C3.JavaScriptInEvents.Folhagameplay_Event41_Act11,
+		C3.JavaScriptInEvents.Folhagameplay_Event41_Act12,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.JavaScriptInEvents.Folhagameover_Event2_Act6,
-		C3.Plugins.System.Acts.GoToLayout,
-		C3.JavaScriptInEvents.Folhagameover_Event3_Act7,
+		C3.JavaScriptInEvents.Folhagameover_Event3_Act6,
 		C3.JavaScriptInEvents.Folhamenuprincipal_Event1_Act5,
 		C3.JavaScriptInEvents.Folhatutorial_Event1_Act5
 	];

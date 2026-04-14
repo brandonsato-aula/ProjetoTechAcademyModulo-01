@@ -34,7 +34,7 @@ let idadevisitante = sessionStorage.getItem('idadevisitante');
     if (!idadevisitante || !nomevisitante) {
         nomevisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
         sessionStorage.setItem('nomevisitante', nomevisitante);
-        idadevisitante = prompt("Olá, " + nomevisitante + "! O site possui conteúdo sensível. Por favor, informe sua idade para continuar:");
+        idadevisitante = prompt("Olá, " + nomevisitante + "! O site possui conteúdo sensível não apropriado para todas as idades. Por favor, informe sua idade para continuar:");
         sessionStorage.setItem('idadevisitante', idadevisitante);
         if (idadevisitante >= 18) {
         // ITEM 3: FEEDBACK POSITIVO
